@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="center-page">
+          <h1>COURSE REGISTRATION FORM</h1>
+    </div>
+    <div class="center-page">
+          <form action="" class="user-info" autocomplete="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="firstname">Firstname</label></td>
+              <td>
+                <input type="text" id="firstname" placeholder="firstname" required>
+                <p class="tooltip">Enter your firstname</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="lastname">Lastname</label></td>
+              <td>
+                <input type="text" id="lastname" placeholder="lastname">
+                <p class="tooltip">Enter your lastname</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mobile">Phone number</label></td>
+              <td>
+                <input type="tel" id="mobile" placeholder="Phone number" minlength="10" maxlength="10" required>
+                <p class="tooltip">Enter your phone number</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">E-mail</label></td>
+              <td>
+                <input type="email" id="email" placeholder="email id" required>
+                <p class="tooltip">Enter your email id</p>
+                <img class="icon" id="correct" src="/COURSE_REGISTRATION_FORM/images/tick.png" alt="correct icon">
+                <img class="icon" id="wrong" src="/COURSE_REGISTRATION_FORM/images/wrong.png" alt="wrong icon">
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password</label></td>
+              <td>
+                <input type="password" id="password" placeholder="password" required>
+                <p class="tooltip">Enter your password</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="ConfirmPassword">Confirm password</label></td>
+              <td>
+                <input type="password" id="ConfirmPassword" placeholder="password" required>
+                <p class="tooltip">Re-enter the password</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="DOB">Date of birth</label></td>
+              <td>
+                <input type="date" id="DOB">
+                <p class="tooltip">Select your d.o.b</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="gender">Gender</label></td>
+              <td>
+                <input type="radio" name="gender" id="male" value="male">Male
+                <input type="radio" name="gender" id="female" value="female">Female
+                <input type="radio" name="gender" id="others" value="others">Others
+              </td>
+            </tr>
+            <tr>
+              <td><label for="country">Country</label></td>
+              <td>
+                <select name="country" id="country-name">
+                  <option id="india" value="India" selected>India</option>
+                  <option id="japan" value="Japan">Japan</option>
+                  <option id="uk" value="United Kingdom">United Kingdom</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="picture">Upload picture</label></td>
+              <td><input type="file" id="picture"></td>
+            </tr>
+            <tr>
+              <td><input type="reset" class="reset"></td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </form>
+    </div>
+
+    <br>
+    <div class="center-page">
+      <form action="" class="course-info" autocomplete="">  
+      <fieldset>
+        <legend>Course details</legend>
+        <table>
+        <tbody>
+          <tr>
+          <td><label for="course">Select course</label></td>
+          <td>
+            <select name="course" id="course">
+              <option value="Java full stack">Java Full Stack Development</option>
+              <option value="Python full stack">Python Full Stack Development</option>
+            </select>
+          </td>
+          </tr>
+          <tr>
+            <td><label for="delivery">Delivery mode</label></td>
+            <td>
+              <input type="checkbox" name="delivery" id="offline" value="offline"> Offline
+              <input type="checkbox" name="delivery" id="online" value="online"> Online
+            </td>
+          </tr>
+          <tr>
+            <td><label for="comments">Comments</label></td>
+            <td><textarea id="comments" rows="3" cols="30"></textarea></td>
+          </tr>
+           <tr>
+            <td><label for="institute-name">Institute name</label></td>
+            <td><input type="text" value="TAP ACADEMY" id="tp" readonly></td>
+          </tr>
+        </tbody>
+      </table>
+      </fieldset>
+      </form>
+    </div>
+
+    <br>
+    <div class="center-page">
+      <button type="button" class="submit">Submit</button>
+    </div>
+    
+  </body>
+</html>
